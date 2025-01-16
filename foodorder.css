@@ -1,0 +1,358 @@
+
+body {
+    font-family: "Lato", serif;;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.navbar ul li {
+    margin: 0 15px;
+    
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    color: #f0a500;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    background: url('https://img.freepik.com/free-photo/tasty-pizza-near-ingredients_23-2147772080.jpg?t=st=1736468974~exp=1736472574~hmac=e8af25e5f0d6486081527f6e2c66d24eca0a3ec4eb04737454d8d516c6fe325b&w=1060') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.banner h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.banner .color{
+    color: goldenrod;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.loc input{
+    border-radius: 15px;
+}
+.featured-items {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.featured-items h2 {
+    margin-bottom: 20px;
+}
+
+.featured-items .items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.featured-items .item {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    height: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.featured-items .item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.featured-items .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+button:hover{
+    background-color: gray;
+}
+
+/* Menu Section */
+#menu {
+    padding: 50px 20px;
+    padding-left: 50px;
+}
+
+#menu h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#search{
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+}
+.menu-category {
+    margin-bottom: 30px;
+}
+
+.menu-category h3 {
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+.menu-item p{
+    text-align: center;
+}
+.menu-item h4{
+    text-align: center;
+}
+
+.menu-item img {
+    width: 130px;
+    height: 80px;
+    border-radius: 8px;
+    
+}
+.menu-item img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.menu-item:hover {
+    background: #e7adadc1;
+}
+
+/* About Section */
+#about {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about iframe {
+    
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #555;
+}
+
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-info iframe {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}  
+@media (max-width: 400px) {
+    
+    body {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        width: 400px;
+    }
+
+    /* Header */
+    header {
+        padding: 8px 0;
+    }
+
+    /* Navbar */
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 8px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .navbar img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Banner */
+    #home {
+        padding: 60px 10px;
+        background-size: cover;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    /* Featured Items */
+    .featured-items .items {
+        flex-direction: column;
+    }
+
+    .featured-items .item {
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+    }
+
+    .featured-items .item img {
+        width: 300px;
+        height: 150px;
+    }
+
+    /* Menu Section */
+    #menu {
+        padding: 30px 10px;
+    }
+
+    #menu h2 {
+        font-size: 22px;
+    }
+
+    #search {
+        width: 30%;
+        height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu-item img {
+        width: 90px;
+        height: 60px;
+    }
+
+    /* About Section */
+    #about img {
+        width: 80%;
+        height: auto;
+    }
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Contact Form */
+    #contact form {
+        padding: 15px;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+}
